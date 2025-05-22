@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .loader {
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+
+.container .loader .ball {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.container .loader .up {
+    background-color: yellow;
+    top: -25px;
+    left: 0;
+    animation: up 1s infinite;
+}
+
+@keyframes up {
+
+    50%,
+    100% {
+        top: 25px;
+    }
+}
+
+.container .loader .right {
+    background-color: green;
+    right: -25px;
+    bottom: 0;
+    animation: rght 1s infinite;
+}
+
+
+@keyframes rght {
+
+    50%,
+    100% {
+        right: 25px;
+    }
+}
+
+
+.container .loader .bottom {
+    background-color: blue;
+    bottom: -25px;
+    left: 0;
+    animation: bott 1s infinite;
+}
+
+@keyframes bott {
+
+    50%,
+    100% {
+        bottom: 25px;
+    }
+}
+
+.container .loader .left {
+    background-color: aqua;
+    left: -25px;
+    bottom: 0;
+    animation: lefft 1s infinite;
+}
+
+@keyframes lefft {
+
+    50%,
+    100% {
+        left: 25px;
+    }
+}
